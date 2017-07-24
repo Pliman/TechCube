@@ -1,0 +1,39 @@
+[
+  {
+    "key": "category",
+    "title": "分类",
+    "imgPath": "1.png",
+    "groups": [
+      {
+        "items": [
+          {
+            "key": "/category/list",
+            "title": "分类列表"
+          },
+         {
+           "key": "/category/add",
+           "title": "新增分类"
+          }  
+        ]
+      }
+    ]
+  },{
+    "key": "technology",
+    "title": "技术",
+    "imgPath": "1.png",
+    "groups": [
+      {
+        "items": [
+          {
+            "key": "tech/list",
+            "title": "技术列表"
+          },
+          {
+            "key": "tech/category",
+            "title": "技术分类"
+          }
+        ]
+      }
+    ]
+  }
+]

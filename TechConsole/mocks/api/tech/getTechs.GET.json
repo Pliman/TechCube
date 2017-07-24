@@ -1,0 +1,6 @@
+{
+  "result": [
+    { "id": 1, "name": "react", "category": "前端框架", "detail": "react是...." },
+    { "id": 2, "name": "veu", "category": "前端框架", "detail": "vue是..." }
+  ]
+}

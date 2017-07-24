@@ -1,0 +1,21 @@
+@import '../../styles/normalize';
+
+.ant-layout-content {
+  overflow: auto;
+  height: 862px;
+  padding: 24px 32px 50px;
+  background-color: #fff;
+
+  a {
+    color: #00bc8d;
+    &:visited, &:active, &:focus {
+      color: #00bc8d;
+    }
+  }
+
+  .ant-pagination-item-active {
+    background-color: #00bc8d;
+    border-color: #00bc8d;
+  }
+
+}

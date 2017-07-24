@@ -1,0 +1,206 @@
+@import '../../styles/base/variables';
+
+.sidebar {
+  display: flex;
+  flex-direction: column;
+
+  color: #292727;
+  background:#fff;
+  overflow-y: auto;
+  overflow-x: hidden;
+
+  .logo {
+    font-size: 18px;
+    height: 75px;
+    padding: 19px 0 0 55px;
+    position: relative;
+
+    img {
+      width: 30px;
+      height: 28px;
+      position: absolute;
+      top: 23px;
+      left: 15px;
+    }
+
+    .logo-title {
+      color: #fff;
+      line-height: 20px;
+      letter-spacing: -.5px;
+    }
+
+    .logo-subtitle {
+      font-size: 12px;
+      transform: scale(8.5/12);
+      transform-origin: 0 0;
+      text-transform: uppercase;
+      letter-spacing: .18px;
+    }
+  }
+
+  > .ant-menu {
+    box-shadow: 2px 0 3px 0 rgba(0, 0, 0, .15);
+  }
+
+  .ant-menu {
+    flex: auto;
+    padding-top: 25px;
+    border-right: none;
+    background: #fff;
+  }
+
+  .ant-menu-item-group-title {
+    color: #292727;
+    opacity: .5;
+    font-size: 13px;
+    letter-spacing: 0;
+    padding-left: 48px!important;
+    background: #fff;
+    cursor: default;
+  }
+  .ant-menu-inline {
+    .ant-menu-item {
+      border-right: 0;
+      padding-right: 0;
+      color: #fff;
+
+      > a {
+        color: #292727;
+      }
+
+      &:hover, &:active {
+        background-color: #f3f3f3;
+      }
+
+      &:after {
+        border-color: #dedada;
+      }
+    }
+    .ant-menu-item-selected {
+      color: #fff!important;
+      border-left-color: $C9;
+      background: #f3f3f3;
+    }
+
+    .ant-menu-submenu-title {
+      font-size: $S4;
+      padding-left: 32px!important;
+      color: #292727;
+
+      img {
+        position: relative;
+        top: 2px;
+        margin-right: 10px;
+      }
+
+      &:active {
+        background: none;
+      }
+    }
+
+    > .ant-menu-item {
+      font-size: $S3;
+      border-right: none;
+      padding-left: 46px!important;
+      color: #292727;
+      margin-top: 14px;
+      > a {
+        color: #292727;
+      }
+    }
+
+    .ant-menu-submenu {
+      .ant-menu {
+        margin-top: 0;
+        padding-top: 0px;
+      }
+
+      .ant-menu-item {
+        font-size: $S4;
+        height: 35px;
+        line-height: 35px;
+        margin-top: 0;
+      }
+    }
+  }
+
+  .ant-menu-submenu-inline {
+    &>.ant-menu-submenu-title {
+      &:before {
+        font-family: "anticon" !important;
+        font-style: normal;
+        vertical-align: baseline;
+        text-align: center;
+        text-transform: none;
+        text-rendering: auto;
+        position: absolute;
+        transition: transform .3s ease;
+        content: "";
+        left: 17px;
+        top: 15px;
+        display: inline-block;
+        font-size: 12px;
+        -ms-filter: "progid:DXImageTransform.Microsoft.Matrix(sizingMethod='auto expand', M11=1, M12=0, M21=0, M22=1)";
+        zoom: 1;
+        filter: none;
+        width: 6px;
+        height: 11px;
+        // background: url('./asset/5.png') no-repeat;
+      }
+      &:after {
+        display: none;
+      }
+      &>span>span{
+        margin-left: 10px 
+      }
+    }
+  }
+
+  .ant-menu-submenu-open {
+    &.ant-menu-submenu-inline {
+      &>.ant-menu-submenu-title {
+        &:before {
+          width: 10px;
+          height: 5px;
+          top: 19px;
+          left: 14px;
+          // background: url('./asset/6.png') no-repeat;
+          -ms-filter: "progid:DXImageTransform.Microsoft.BasicImage(rotation=1)";
+        }
+      }
+    }
+   }
+
+  .small-card {
+    margin: 23px 15px 0px;
+    .user-card {
+      height: 60px;
+      width: 187px;
+      min-width: 180px;
+      margin-bottom: 2px;
+      padding-top: 11px;
+      box-shadow: none;
+      background: #f3f3f3;
+      &>img {
+        width: 40px;
+        height: 40px;
+        float: left;
+        margin-left: 9px;
+      }
+      &>.user-info {
+        p.username {
+          font-size: 13px;
+          margin-left: 0px;
+          margin-right: 0px; 
+          margin-top: 2px;
+        }
+        p.tel {
+          font-size: 10px;
+          margin-left: 0px;
+          margin-right: 0px; 
+          margin-top: 2px;
+        }
+      }
+    }
+  }
+}
