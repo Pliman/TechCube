@@ -60,6 +60,3 @@ webpack + babel
 
 ### 适用系统
 由于引入了antd，因此更适用于管理性质的系统。
-
-### 维护人
-yuan.gao@dianrong.com
